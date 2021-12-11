@@ -1,5 +1,5 @@
 function average(numbers) {
-  n = numbers.length
+  var n =numbers.length
   return numbers.reduce((p,c)=>{
     if (isNaN(c))
     {
@@ -9,5 +9,4 @@ function average(numbers) {
     return p+c;
   }, 0) / n;
 }
-
 module.exports = {average};
