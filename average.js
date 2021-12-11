@@ -1,14 +1,12 @@
-
+function av(p,c){
+  if (isNaN(c)){
+    n-=1
+    return p;
+  }
+  return p+c;
+}
 function average(numbers) {
-  if (numbers.length ==0){return NaN}
-  return numbers.reduce((p,c)=>{
-
-    if (isNaN(c))
-    {
-      numbers.length-=1
-      return p;
-    }
-    return p+c;
-  }, 0) / numbers.length;
+  n=numbers.length
+  return numbers.reduce(av, 0) / n;
 }
 module.exports = {average};
