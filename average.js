@@ -1,13 +1,9 @@
 function average(numbers) {
-  var n = numbers.length
+  var n = t = numbers.length
   // counting the number of NaNs and outlier values
-  for(var i=0;i<numbers.length;i++)
+  for(var i=0;i<t;i++)
   {
-    if(isNaN(numbers[i]))
-    {
-      n-=1
-    }
-    if (numbers[i]>=150 || numbers[i]<0){
+    if(isNaN(numbers[i])||numbers[i]>=150 || numbers[i]<0){
       n-=1
     }
   }
@@ -26,5 +22,5 @@ function average(numbers) {
   }, 0) / n;
   return avg
 }
-
+console.log(average([51, 1000, 38, 71, 80, 1500, -15]))
 module.exports = {average};
