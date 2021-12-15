@@ -12,7 +12,7 @@ function average(numbers) {
     }
   }
   // returning the average
-  return numbers.reduce((p,c)=>
+  var avg = numbers.reduce((p,c)=>
   {
     // ignoring a value if it is NaN
     if (isNaN(c)){
@@ -24,6 +24,7 @@ function average(numbers) {
     }
     return p+c;
   }, 0) / n;
+  return avg
 }
-console.log(average([51, 1000, 38, 71, 80, 1500, -15]))
+
 module.exports = {average};
