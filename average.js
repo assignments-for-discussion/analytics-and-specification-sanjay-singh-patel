@@ -21,5 +21,4 @@ function average(numbers) {
   }, 0) / n;
   
 }
-console.log(average([51, 1000, 38, 71, 80, 1500, -15]))
 module.exports = {average};
