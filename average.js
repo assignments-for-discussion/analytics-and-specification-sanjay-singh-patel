@@ -17,6 +17,10 @@ function average(numbers) {
       return p;
     }
     // Assuming any value grater tha 150 or negative is an outlier value
+    if (c>=150||c<0){
+      n-=1
+      return p;
+    }
     return p+c;
   }, 0) / n;
   
